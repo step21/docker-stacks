@@ -1,0 +1,77 @@
+{
+  "GID": 20,
+  "UID": 501,
+  "active_prefix": "/Users/utopist/miniforge3",
+  "active_prefix_name": "base",
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/osx-64",
+    "https://conda.anaconda.org/conda-forge/noarch"
+  ],
+  "conda_build_version": "3.18.12",
+  "conda_env_version": "4.8.3",
+  "conda_location": "/Users/utopist/miniforge3/lib/python3.7/site-packages/conda",
+  "conda_prefix": "/Users/utopist/miniforge3",
+  "conda_private": false,
+  "conda_shlvl": 1,
+  "conda_version": "4.8.3",
+  "config_files": [
+    "/Users/utopist/miniforge3/.condarc",
+    "/Users/utopist/.condarc"
+  ],
+  "default_prefix": "/Users/utopist/miniforge3",
+  "env_vars": {
+    "CIO_TEST": "<not set>",
+    "CONDA_DEFAULT_ENV": "base",
+    "CONDA_EXE": "/Users/utopist/miniforge3/bin/conda",
+    "CONDA_PREFIX": "/Users/utopist/miniforge3",
+    "CONDA_PROMPT_MODIFIER": "(base) ",
+    "CONDA_PYTHON_EXE": "/Users/utopist/miniforge3/bin/python",
+    "CONDA_ROOT": "/Users/utopist/miniforge3",
+    "CONDA_SHLVL": "1",
+    "PATH": "/Users/utopist/miniforge3/bin:/Users/utopist/miniforge3/bin:/Users/utopist/miniforge3/condabin:/Users/utopist/.pyenv/shims:/usr/local/sbin:/Users/utopist/.cargo/bin:/Users/utopist/.pyenv/shims:/Users/utopist/.nvm/versions/node/v12.16.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/usr/local/MacGPG2/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/utopist/bin:/Users/utopist/go/bin:/Users/utopist/Library/Python/3.7/bin",
+    "REQUESTS_CA_BUNDLE": "<not set>",
+    "SSL_CERT_FILE": "<not set>"
+  },
+  "envs": [
+    "/Users/utopist/miniforge3",
+    "/Users/utopist/miniforge3/conda-bld/gdb_1593471760115/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/llvmlite_1592859562732/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/llvmlite_1592911165604/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/llvmlite_1592912168064/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/pandoc_1594647297453/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/pandoc_1594755863798/_build_env",
+    "/Users/utopist/miniforge3/conda-bld/pytables_1594139480656/_build_env",
+    "/Users/utopist/miniforge3/envs/cf",
+    "/Users/utopist/miniforge3/envs/gdb",
+    "/Users/utopist/miniforge3/envs/jupyter"
+  ],
+  "envs_dirs": [
+    "/Users/utopist/miniforge3/envs",
+    "/Users/utopist/.conda/envs"
+  ],
+  "netrc_file": "/Users/utopist/.netrc",
+  "offline": false,
+  "pkgs_dirs": [
+    "/Users/utopist/miniforge3/pkgs",
+    "/Users/utopist/.conda/pkgs"
+  ],
+  "platform": "osx-64",
+  "python_version": "3.7.6.final.0",
+  "rc_path": "/Users/utopist/.condarc",
+  "requests_version": "2.24.0",
+  "root_prefix": "/Users/utopist/miniforge3",
+  "root_writable": true,
+  "site_dirs": [],
+  "sys.executable": "/Users/utopist/miniforge3/bin/python",
+  "sys.prefix": "/Users/utopist/miniforge3",
+  "sys.version": "3.7.6 | packaged by conda-forge | (default, Mar 23 2020, 22:45:16) \n[Clang 9.0.1 ]",
+  "sys_rc_path": "/Users/utopist/miniforge3/.condarc",
+  "user_agent": "conda/4.8.3 requests/2.24.0 CPython/3.7.6 Darwin/19.6.0 OSX/10.15.6",
+  "user_rc_path": "/Users/utopist/.condarc",
+  "virtual_pkgs": [
+    [
+      "__osx",
+      "10.15.6"
+    ]
+  ]
+}
