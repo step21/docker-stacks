@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG BASE_CONTAINER=step21/scipy-notebook
+ARG BASE_CONTAINER=step21/datascience-notebook
 FROM $BASE_CONTAINER
 
 LABEL maintainer="Florian Idelberger <florian.idelberger@eui.eu>"
@@ -14,6 +14,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     fonts-dejavu \
     gfortran \
+    swipl \
     gcc && \
     rm -rf /var/lib/apt/lists/*
 
@@ -27,7 +28,6 @@ USER $NB_UID
 #RUN conda install -y web3
 
 # add prolog stuff
-RUN apt-get install -y -no-install-recommends swipl
 
 # add ace stuff
 
