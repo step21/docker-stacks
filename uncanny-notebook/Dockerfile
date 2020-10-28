@@ -24,10 +24,10 @@ USER $NB_UID
 # add multi kernel stuff
 
 # add solidity/web3 stuff
-# on hold until this is in conda-forger
-#RUN conda install -y web3
+RUN conda install -y web3
 
 # add prolog stuff
+RUN conda install -y swi-prolog
 
 # add ace stuff
 
