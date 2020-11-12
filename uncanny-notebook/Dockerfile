@@ -22,7 +22,7 @@ WORKDIR /tmp
 USER $NB_UID
 
 # add multi kernel stuff
-
+RUN conda install -y sos sos-pbs sos-notebook jupyterlab-sos sos-bash sos-python sos-r
 # add solidity/web3 stuff
 RUN conda install -y web3
 
