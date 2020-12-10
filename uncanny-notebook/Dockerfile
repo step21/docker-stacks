@@ -23,13 +23,24 @@ USER $NB_UID
 
 # add multi kernel stuff
 RUN conda install -y sos sos-pbs sos-notebook jupyterlab-sos sos-bash sos-python sos-r
+# sos-matlab
 # add solidity/web3 stuff
 RUN conda install -y web3
 
 # add prolog stuff
-RUN conda install -y swi-prolog
+#RUN conda install -y swi-prolog
+RUN python3 -m pip install jswipl && cd /opt/conda/share/jupyter/kernels && mkdir jswipl && cd jswipl && wget https://raw.githubusercontent.com/targodan/jupyter-swi-prolog/master/kernel.json
 
+#or
+#pip3 install --upgrade calysto_prolog
+#python3 -m calysto_prolog install
+RUN mkdir /home/jovyan/bin && export PATH=/home/jovyan/bin:$PATH && echo "export PATH=/home/jovyan/bin:$PATH" >> /home/jovyan/.bashrc
 # add ace stuff
+RUN git clone https://github.com/step21/ape.git && cd ape && make build && cp ape.bin /home/jovyan/bin/
 
+# add haskell
+
+# imandra
+#https://github.com/AestheticIntegration/jupyter-imandra.git
 
 WORKDIR $HOME
