@@ -45,7 +45,7 @@ RUN git clone https://github.com/step21/ape.git && cd ape && make build && cp ap
 #https://github.com/AestheticIntegration/jupyter-imandra.git
 
 # Lexon v 0.2
-RUN curl https://sh.rustup.rs -sSf | sh && source $HOME/.cargo/env && git clone https://gitlab.com/lexon-foundation/lexon-rust.git && cd lexon-rust && cargo build && cp target/debug/lexon-rust /home/jovyan/bin/
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable && source $HOME/.cargo/env && git clone https://gitlab.com/lexon-foundation/lexon-rust.git && cd lexon-rust && cargo build && cp target/debug/lexon-rust /home/jovyan/bin/
 
 
 
