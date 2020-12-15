@@ -26,6 +26,7 @@ RUN conda install -y sos sos-pbs sos-notebook jupyterlab-sos sos-bash sos-python
 # sos-matlab
 # add solidity/web3 stuff
 RUN conda install -y web3
+RUN conda install py-solc-x && python -m solcx.install v0.6.7
 
 # add prolog stuff
 #RUN conda install -y swi-prolog
@@ -42,5 +43,10 @@ RUN git clone https://github.com/step21/ape.git && cd ape && make build && cp ap
 
 # imandra
 #https://github.com/AestheticIntegration/jupyter-imandra.git
+
+# Lexon v 0.2
+RUN curl https://sh.rustup.rs -sSf | sh && source $HOME/.cargo/env && git clone https://gitlab.com/lexon-foundation/lexon-rust.git && cd lexon-rust && cargo build && cp target/debug/lexon-rust /home/jovyan/bin/
+
+
 
 WORKDIR $HOME
