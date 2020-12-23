@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG BASE_CONTAINER=jupyter/datascience-notebook
+ARG BASE_CONTAINER=jupyter/scipy-notebook
 FROM $BASE_CONTAINER
 
 LABEL maintainer="Florian Idelberger <florian.idelberger@eui.eu>"
@@ -24,9 +24,9 @@ WORKDIR /tmp
 USER $NB_UID
 
 # add multi kernel stuff
-RUN conda install -y sos sos-pbs sos-notebook jupyterlab-sos sos-bash sos-python sos-r && jupyter labextension install @jupyterlab/toc @jupyterlab/latex && jupyter lab build
+RUN conda install -y sos sos-pbs sos-notebook jupyterlab-sos sos-bash sos-python && jupyter labextension install @jupyterlab/toc @jupyterlab/latex && jupyter lab build
 # jupyter labextension install jupyterlab-drawio
-# sos-matlab
+# sos-matlab # sos-r
 # add solidity/web3 stuff
 RUN conda install -y web3
 RUN conda install py-solc-x && python -m solcx.install v0.6.7
@@ -35,6 +35,7 @@ RUN conda install py-solc-x && python -m solcx.install v0.6.7
 #RUN conda install -y swi-prolog
 RUN python3 -m pip install jswipl && cd /opt/conda/share/jupyter/kernels && mkdir jswipl && cd jswipl && wget https://raw.githubusercontent.com/targodan/jupyter-swi-prolog/master/kernel.json
 
+RUN git clone https://bitbucket.org/lpsmasters/lps_corner.git lps && cd lps 
 #or
 #pip3 install --upgrade calysto_prolog
 #python3 -m calysto_prolog install
