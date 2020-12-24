@@ -17,6 +17,7 @@ RUN apt-get update && \
     swi-prolog \
     gcc \
     bison \
+    curl \
     flex && \
     rm -rf /var/lib/apt/lists/*
 
