@@ -1,4 +1,3 @@
-# A notebook environment to support evaluating smart contracts and similar e-contract technologies (primarily for my thesis)
-
+# A notebook environment with prolog, solidity, ACE, LPS/Logical English and Lexon added.
 * add dockerfile
 * try with binder
